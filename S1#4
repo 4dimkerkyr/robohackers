@@ -1,0 +1,36 @@
+/*!
+ * MindPlus
+ * uno
+ *
+ */
+#include <DFRobot_DHT.h>
+#include <DFRobot_Servo.h>
+
+// Dynamic variables
+volatile float mind_n__;
+// Create an object
+DFRobot_DHT dht11_9;
+Servo       servo_8;
+
+
+// Main program start
+void setup() {
+	dht11_9.begin(9, DHT11);
+	pinMode(0, INPUT);
+	servo_8.attach(8);
+	pinMode(3, INPUT);
+	pinMode(6, OUTPUT);
+}
+void loop() {
+	mind_n__ = dht11_9.getTemperature();
+	digitalWrite(4, HIGH);
+	analogWrite(3, (map(mind_n__, 10, 20, 1, 10)));
+	if ((analogRead(0)<100)) {
+		servo_8.angle(180);
+	}
+	else {
+		servo_8.angle(0);
+	}
+	analogWrite(6, (analogRead(3) / 4));
+}
+
