@@ -1,0 +1,41 @@
+/*!
+ * MindPlus
+ * uno
+ *
+ */
+
+
+// Main program start
+void setup() {
+	pinMode(6, INPUT);
+	pinMode(7, OUTPUT);
+	pinMode(8, OUTPUT);
+	pinMode(9, INPUT);
+}
+void loop() {
+	if (!digitalRead(6)) {
+		digitalWrite(7, HIGH);
+		for (int index = 0; index < 5; index++) {
+			digitalWrite(8, HIGH);
+			delay(1000);
+			digitalWrite(8, LOW);
+			delay(1000);
+		}
+	}
+	else {
+		digitalWrite(7, LOW);
+		digitalWrite(8, LOW);
+	}
+	if (digitalRead(9)) {
+		for (int index = 0; index < 5; index++) {
+			digitalWrite(8, HIGH);
+			delay(1000);
+			digitalWrite(8, LOW);
+			delay(1000);
+		}
+	}
+	else {
+		digitalWrite(7, LOW);
+		digitalWrite(8, LOW);
+	}
+}
