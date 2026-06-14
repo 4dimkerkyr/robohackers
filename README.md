@@ -9,7 +9,3 @@ A repository for the 8th competition of Open Technologies in Education
 καθώς επίσης να ενσωματώνει τη δανειστική βιβλιοθήκη. 
 Η αίθουσα αυτή θα διαθέτει αυτοματισμούς που θα προσφέρουν ηρεμία και χαλάρωση στο χώρο, ιδιωτικότητα, συμπερίληψη και προσβασιμότητα ΑΜΕΑ, 
 αλλά και σεβασμό προς το περιβάλλον εξοικονομώντας ενέργεια και περιλαμβάνοντας την ανακύκλωση.
-
-Κώδικας:
-https://drive.google.com/file/d/1I-ylWrPNepowzgYpA02eGbUA0SUwjqp0/view?usp=sharing
-https://drive.google.com/file/d/1HDOYd7fFnki4-x6qh4PJ-eIqo3OmRQjQ/view?usp=sharing
